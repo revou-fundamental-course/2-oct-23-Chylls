@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Kalkulator Suhu</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Kalkulator Suhu</h1>
+        <form id="temperatureForm">
+            <label for="temperature">Masukkan Suhu:</label>
+            <input type="number" id="temperature" required>
+            <select id="unit">
+                <option value="celsius">Celsius</option>
+                <option value="fahrenheit">Fahrenheit</option>
+            </select>
+            <button type="submit">Konversi</button>
+        </form>
+        <div id="result"></div>
+
+        <div id="howToConvert">
+            <h2>Cara Menghitung Konversi Suhu:</h2>
+            <p>Untuk mengkonversi suhu dari Celsius ke Fahrenheit, gunakan rumus berikut:</p>
+            <p><strong>Fahrenheit = (Celsius × 9/5) + 32</strong></p>
+
+            <p>Untuk mengkonversi suhu dari Fahrenheit ke Celsius, gunakan rumus berikut:</p>
+            <p><strong>Celsius = (Fahrenheit - 32) × 5/9</strong></p>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
